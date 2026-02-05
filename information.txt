@@ -1,0 +1,59 @@
+“We believe communication belongs to people, not platforms — we’re building a future where we own our networks, protect our privacy, and connect freely OFFLINE, without dependence on centralized internet infrastructure.”
+
+
+Problem Statement Explaination:
+
+Today’s digital world is built almost entirely on the internet—centralized platforms, cloud servers, and corporate-controlled infrastructure. While this enables global connectivity, it also introduces serious challenges: loss of privacy, data surveillance, dependency on big tech, single points of failure, and complete communication breakdown during outages or in remote areas.
+For millions of offline users, privacy-conscious individuals, and communities seeking true digital independence, there is currently no simple, decentralized alternative to the internet.
+Our team addresses this gap by building an Offline Mesh Network — a system that works completely without the internet. Instead of relying on central servers, devices connect directly with one another in a peer-to-peer mesh. Each node strengthens the network, creating a resilient, self-healing, and fully decentralized communication layer.
+This enables private, censorship-resistant, and infrastructure-free connectivity for people who value privacy, autonomy, and reliability—whether in remote regions, during network shutdowns, in local communities, or among users who simply want control over their own data.
+Our solution empowers offline users with a secure, decentralized network that puts ownership back into the hands of people—not platforms.
+
+
+🔄 Workflow of the Offline Mesh Network System
+Step 1 — App Installation (Initial Internet Use)
+The user first uses the internet only once to download the network application. After installation, the system primarily operates offline.
+Step 2 — Wallet Creation (User Identity)
+Each user creates a wallet that acts as their unique username.
+This wallet is based on Ethereum-style mnemonic phrases.
+The mnemonic generates two cryptographic keys:
+Public Key (for encryption / identification)
+Private Key (for decryption / ownership)
+Messages encrypted with one key can only be decrypted using its complementary key, ensuring secure communication.
+Step 3 — Connection to Pinging Server
+After wallet creation, the application briefly connects to a Pinging Server.
+This server:
+Registers the wallet
+Helps generate a unique network address called IPVX
+Initializes the user into the mesh network
+After this step, the offline system can function.
+Step 4 — IPVX Generation (Custom Offline Addressing)
+A custom addressing protocol called IPVX is created, inspired by IPv6.
+Core properties:
+Hexadecimal based
+Initial length: 16 bytes
+Includes:
+Prefix (1 byte): Distinguishes IPVX from standard IPv6
+Suffix (binary): Used to identify and connect offline users
+Each user is assigned a number from 0–255, converted into a binary byte and appended to the IPVX.
+This makes the initial IPVX length 18 bytes.
+Step 5 — Network Expansion
+When another user connects:
+An additional byte is added to the IPVX
+IPVX becomes 19 bytes
+For every new user joining the mesh, the address grows sequentially by 1 byte
+This creates a dynamic addressing structure that reflects network growth.
+Step 6 — Offline Mesh Communication
+Using IPVX:
+Devices connect directly in a peer-to-peer mesh
+Each node can relay data for others
+No central servers are required
+Communication remains encrypted and decentralized
+Because IPVX behaves similarly to IPv6, it inherits routing flexibility while operating entirely in an offline environment.
+✅ Final Outcome
+A secure, decentralized, privacy-first offline mesh network is formed where:
+Users are identified by wallets
+Communication is encrypted
+Addressing grows dynamically
+Connectivity exists without traditional internet infrastructure
+
